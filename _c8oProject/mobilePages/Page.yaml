@@ -1,0 +1,119 @@
+↑isRoot: true
+comment: My First Page as root page
+preloadPriority: high
+scriptContent: 
+  - xmlizable: 
+    - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+    - com.twinsoft.convertigo.beans.common.FormatedContent: 
+      →: |
+        /*Begin_c8o_PageImport*/
+        /*End_c8o_PageImport*/
+        /*Begin_c8o_PageDeclaration*/
+        	/*End_c8o_PageDeclaration*/
+        /*Begin_c8o_PageConstructor*/
+        		/*End_c8o_PageConstructor*/
+        /*Begin_c8o_PageFunction*/
+        	/*End_c8o_PageFunction*/
+        
+segment: path-to-page
+title: First page
+↓Header [ngx.components.UIDynamicElement-1491634212350]: 
+  beanData: '{"ionBean":"Header"}'
+  comment: Page header
+  tagName: ion-header
+  ↓ToolBar [ngx.components.UIDynamicElement-1491634231108]: 
+    beanData: '{"ionBean":"ToolBar"}'
+    tagName: ion-toolbar
+    ↓ButtonSet1 [ngx.components.UIDynamicElement-1615380129428]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:start"}'
+      tagName: ion-buttons
+      ↓Button [ngx.components.UIDynamicElement-1491634442029]: 
+        beanData: '{"ionBean":"MenuButton"}'
+        comment: A button to toggle the menu
+        tagName: ion-menu-button
+    ↓BarTitle [ngx.components.UIDynamicElement-1491634265317]: 
+      beanData: '{"ionBean":"BarTitle"}'
+      tagName: ion-title
+      ↓Text [ngx.components.UIText-1491634275121]: 
+        i18n: false
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:SAML SSO Sample application
+    ↓ButtonSet2 [ngx.components.UIDynamicElement-1491634611427]: 
+      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:end"}'
+      tagName: ion-buttons
+      ↓Button [ngx.components.UIDynamicElement-1491634621907]: 
+        beanData: '{"ionBean":"Button"}'
+        tagName: ion-button
+        ↓Icon [ngx.components.UIDynamicElement-1491634637555]: 
+          beanData: '{"ionBean":"Icon","IconName":"plain:ellipsis-vertical-outline"}'
+          tagName: ion-icon
+↓Content [ngx.components.UIDynamicElement-1489674805352]: 
+  beanData: '{"ionBean":"Content"}'
+  comment: Page content
+  tagName: ion-content
+  ↓UseSharedComponent [ngx.components.UIUseShared-1606215787739]: 
+    sharedcomponent: lib_SAML_Ngx.MobileApplication.Application.SAMLLogin
+  ↓FormatLayout [ngx.components.UIDynamicAttr-1615379768066]: 
+    beanData: '{"ionBean":"FormatLayout","TextAlignment":"plain:ion-text-center"}'
+    comment: FormatLayout
+    tagName: div
+  ↓Paragraph [ngx.components.UIDynamicElement-1606215908474]: 
+    beanData: '{"ionBean":"Paragraph"}'
+    tagName: p
+    ↓Text [ngx.components.UIText-1606215914690]: 
+      i18n: false
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: |
+              plain:This is a SAML SSO Login sample app. Be sure to read the 
+              
+    ↓Tag [ngx.components.UIElement-1606216180609]: 
+      tagName: a
+      ↓Attr [ngx.components.UIAttribute-1606216200040]: 
+        attrName: href
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:https://github.com/convertigo/c8oprj-lib-saml-ngx#lib_saml_Ngx
+      ↓Attr1 [ngx.components.UIAttribute-1606216233380]: 
+        attrName: target
+        attrValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:_blank
+      ↓Text [ngx.components.UIText-1606216254466]: 
+        i18n: false
+        textValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: plain:https://github.com/convertigo/c8oprj-lib-saml-ngx#lib_saml_Ngx
+    ↓Text1 [ngx.components.UIText-1606216132841]: 
+      i18n: false
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: |
+              plain:page to configure your SAML IDP provider and accordingly your Convertigo symbols.
+              
+              
+              
+  ↓Heading [ngx.components.UIDynamicTag-1606221159616]: 
+    beanData: '{"ionBean":"Heading"}'
+    tagName: h1
+    ↓Text [ngx.components.UIText-1606221169576]: 
+      i18n: false
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: plain:You are authenticated as
+  ↓Heading1 [ngx.components.UIDynamicTag-1606221192469]: 
+    beanData: '{"ionBean":"Heading"}'
+    tagName: h4
+    ↓Text [ngx.components.UIText-1606221192472]: 
+      textValue: 
+        - xmlizable: 
+          - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+          - MobileSmartSourceType: script:router.sharedObject.SAMLNameID

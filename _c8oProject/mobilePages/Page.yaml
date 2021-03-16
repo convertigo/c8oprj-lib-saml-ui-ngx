@@ -54,7 +54,7 @@ title: First page
   comment: Page content
   tagName: ion-content
   ↓UseSharedComponent [ngx.components.UIUseShared-1606215787739]: 
-    sharedcomponent: lib_SAML_Ngx.MobileApplication.Application.SAMLLogin
+    sharedcomponent: lib_SAML_ui_ngx.MobileApplication.Application.SAMLLogin
   ↓FormatLayout [ngx.components.UIDynamicAttr-1615379768066]: 
     beanData: '{"ionBean":"FormatLayout","TextAlignment":"plain:ion-text-center"}'
     comment: FormatLayout
@@ -77,7 +77,7 @@ title: First page
         attrValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:https://github.com/convertigo/c8oprj-lib-saml-ngx#lib_saml_Ngx
+            - MobileSmartSourceType: plain:https://github.com/convertigo/c8oprj-lib-saml-ngx#lib_saml_ui_ngx
       ↓Attr1 [ngx.components.UIAttribute-1606216233380]: 
         attrName: target
         attrValue: 
@@ -89,7 +89,7 @@ title: First page
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:https://github.com/convertigo/c8oprj-lib-saml-ngx#lib_saml_Ngx
+            - MobileSmartSourceType: plain:https://github.com/convertigo/c8oprj-lib-saml-ngx#lib_saml_ui_ngx
     ↓Text1 [ngx.components.UIText-1606216132841]: 
       i18n: false
       textValue: 

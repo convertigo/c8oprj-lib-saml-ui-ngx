@@ -1,7 +1,7 @@
 comment: The SAML AuthComponent. insert it anywhere in your page to enable SAML SSO
 ↓PageEvent [ngx.components.UIPageEvent-1605966122141]: 
   ↓CallSequenceCheckSAMLToken [ngx.components.UIDynamicAction-1605966134173]: 
-    beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:lib_SAML_Ngx.CheckSAMLToken"}'
+    beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:lib_SAML.CheckSAMLToken"}'
     ↓IfNotSAMLToken [ngx.components.UIDynamicIf-1606217385688]: 
       beanData: '{"ionBean":"IfElseAction","condition":"script:parent.out.SAML == ''NoToken''"}'
       ↓RedirectToIDP [ngx.components.UICustomAction-1605966339797]: 
@@ -43,7 +43,7 @@ comment: The SAML AuthComponent. insert it anywhere in your page to enable SAML 
               - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
               - MobileSmartSourceType: script:stack['CallSequenceCheckSAMLToken'].out.SAMLIdpServiceURL
         ↓CallSequenceCheckSAMLTokenAgain [ngx.components.UIDynamicAction-1606303802806]: 
-          beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:lib_SAML_Ngx.CheckSAMLToken"}'
+          beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:lib_SAML.CheckSAMLToken"}'
           ↓IfNotSAMLToken [ngx.components.UIDynamicIf-1606303802812]: 
             beanData: '{"ionBean":"IfElseAction","condition":"script:parent.out.SAML == ''NoToken''"}'
             ↓LogFailedAuthentication [ngx.components.UIDynamicAction-1606303914226]: 
@@ -67,7 +67,7 @@ comment: The SAML AuthComponent. insert it anywhere in your page to enable SAML 
               - xmlizable: 
                 - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
                 - MobileSmartSourceType: |
-                    script:window.location.href.substring(0, window.location.href.indexOf('/mobile')) + '../../../lib_SAML_Ngx/closeWindow.html'
+                    script:window.location.href.substring(0, window.location.href.indexOf('/mobile')) + '../../../lib_SAML/closeWindow.html'
                     
       ↓Else_Handler [ngx.components.UIActionElseEvent-1606217449481]: 
         ↓SetGlobal [ngx.components.UIDynamicAction-1606217462441]: 
@@ -83,5 +83,5 @@ comment: The SAML AuthComponent. insert it anywhere in your page to enable SAML 
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
           - MobileSmartSourceType: |
-              script:window.location.href.substring(0, window.location.href.indexOf('/mobile')) + '../../../lib_SAML_Ngx/closeWindow.html'
+              script:window.location.href.substring(0, window.location.href.indexOf('/mobile')) + '../../../lib_SAML/closeWindow.html'
               

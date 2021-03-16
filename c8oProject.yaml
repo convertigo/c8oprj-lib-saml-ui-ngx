@@ -1,13 +1,11 @@
 ↑convertigo: 8.0.0.m006
-↓lib_SAML_Ngx [core.Project]: 
+↓lib_SAML_ui_ngx [core.Project]: 
   comment: Convertigo Mobile builder Project
   corsOrigin: =Origin
   version: 2.0.0
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
-  ↓Authentiticate [sequences.GenericSequence]: 🗏 sequences/Authentiticate.yaml
-  ↓CheckSAMLToken [sequences.GenericSequence]: 🗏 sequences/CheckSAMLToken.yaml
-  ↓GenerateAuthnRequest [sequences.GenericSequence]: 🗏 sequences/GenerateAuthnRequest.yaml
-  ↓UrlMapper [core.UrlMapper]: 🗏 urlMapper.yaml
+  ↓lib_SAML_reference [references.ProjectSchemaReference]: 
+    projectName: lib_SAML=https://github.com/convertigo/c8oprj-lib-saml.git:branch=7.9.0
   ↓Project_reference [references.ProjectSchemaReference]: 
     projectName: mobilebuilder_tpl_8_0_0_ngx=https://github.com/convertigo/c8oprj-mobilebuilder-tpl.git:branch=mobilebuilder_tpl_8_0_0_ngx:autoPull=true
   ↓MobileApplication [core.MobileApplication]: 

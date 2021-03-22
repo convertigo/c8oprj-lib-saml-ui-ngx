@@ -77,7 +77,7 @@ title: First page
         attrValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:https://github.com/convertigo/c8oprj-lib-saml-ngx#lib_saml_ui_ngx
+            - MobileSmartSourceType: plain:https://github.com/convertigo/c8oprj-lib-saml-ui-ngx#lib_saml_ui_ngx
       ↓Attr1 [ngx.components.UIAttribute-1606216233380]: 
         attrName: target
         attrValue: 
@@ -89,7 +89,7 @@ title: First page
         textValue: 
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:https://github.com/convertigo/c8oprj-lib-saml-ngx#lib_saml_ui_ngx
+            - MobileSmartSourceType: plain:https://github.com/convertigo/c8oprj-lib-saml-ui-ngx#lib_saml_ui_ngx
     ↓Text1 [ngx.components.UIText-1606216132841]: 
       i18n: false
       textValue: 

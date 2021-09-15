@@ -25,7 +25,7 @@ componentScriptContent:
         
 tplProjectName: mobilebuilder_tpl_8_0_0_ngx
 ↓Menu [ngx.components.UIDynamicMenu-1500890597895]: 🗏 mobileMenus/Menu.yaml
-↓SAMLLogin [ngx.components.UISharedComponent-1606215730612]: 🗏 mobileSharedComponents/SAMLLogin.yaml
+↓SAMLLogin [ngx.components.UISharedRegularComponent-1606215730612]: 🗏 mobileSharedComponents/SAMLLogin.yaml
 ↓Page [ngx.components.PageComponent-1500538678074]: 🗏 mobilePages/Page.yaml
 ↓Theme [ngx.components.UITheme-1491635018260]: 
   comment: Global color themes can be customized here

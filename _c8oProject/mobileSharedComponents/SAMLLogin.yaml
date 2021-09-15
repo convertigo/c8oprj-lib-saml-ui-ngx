@@ -18,20 +18,20 @@ comment: The SAML AuthComponent. insert it anywhere in your page to enable SAML 
                                 );
                                 
                                 browserRef.addEventListener("loadstart", (evt) => {
-                                    this.c8o.log.debug("SAML IDP Login Page loaded in InApp Browser")
+                                    page.c8o.log.debug("SAML IDP Login Page loaded in InApp Browser")
                                 });
                                 
                                 browserRef.addEventListener("exit", function (evt) {
-                                    this.c8o.log.debug("SAML IDP Page Closed in InApp Browser")
+                                    page.c8o.log.debug("SAML IDP Page Closed in InApp Browser")
                                     resolve();
                                 });
                     	    }
                     	    else {
-                                this.c8o.log.debug("SAML IDP Login page  opening as popup")
+                                page.c8o.log.debug("SAML IDP Login page  opening as popup")
                         		const SAMLpopup = window.open(vars.url, "SAML",  "location=no, clearsessioncache=yes, clearcache=yes");
                                 window.addEventListener('message', (Msg) => {
                                     if (Msg.data == 'C8OSAMLWindow') {
-                                        this.c8o.log.debug("SAML IDP Login page has been closed")
+                                        page.c8o.log.debug("SAML IDP Login page has been closed")
                                         resolve();
                                     }
                                 });

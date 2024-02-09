@@ -117,3 +117,55 @@ title: First page
         - xmlizable: 
           - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
           - MobileSmartSourceType: script:router.sharedObject.SAMLNameID
+  ↓if [ngx.components.UIControlDirective-1707476305747]: 
+    directiveName: If
+    directiveSource: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+        - MobileSmartSourceType: source:{"filter":"Sequence","project":"lib_SAML_ui_ngx","input":"","model":{"data":[{"sequence":"lib_SAML.CheckSAMLToken","marker":""}],"path":"?.attributes","prefix":"","suffix":"","custom":"","useCustom":false}}
+    ↓ListContainer [ngx.components.UIDynamicElement-1707476253193]: 
+      beanData: '{"ionBean":"List"}'
+      tagName: ion-list
+      ↓ListHeader [ngx.components.UIDynamicElement-1707476253178]: 
+        beanData: '{"ionBean":"Listheader"}'
+        tagName: ion-list-header
+        ↓Label [ngx.components.UIDynamicElement-1707476253180]: 
+          beanData: '{"ionBean":"Label"}'
+          tagName: ion-label
+          ↓Heading [ngx.components.UIDynamicTag-1707476253182]: 
+            beanData: '{"ionBean":"Heading"}'
+            tagName: h1
+            ↓some_text [ngx.components.UIText-1707476253184]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:Attributes
+      ↓tag [ngx.components.UIControlDirective-1707474439873]: 
+        directiveSource: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+            - MobileSmartSourceType: source:{"filter":"Sequence","project":"lib_SAML_ui_ngx","input":"","model":{"data":[{"sequence":"lib_SAML.CheckSAMLToken","marker":""}],"path":"?.attributes","prefix":"","suffix":"| keyvalue","custom":"","useCustom":false}}
+        ↓ListItem [ngx.components.UIDynamicElement-1707476253188]: 
+          beanData: '{"ionBean":"ListItem","IonColor":"plain:primary"}'
+          tagName: ion-item
+          ↓Label [ngx.components.UIDynamicElement-1707476253190]: 
+            beanData: '{"ionBean":"Label"}'
+            tagName: ion-label
+            ↓some_text [ngx.components.UIText-1707476253192]: 
+              i18n: false
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Iteration","project":"lib_SAML_ui_ngx","input":"","model":{"data":[{"priority":1707474439873}],"path":"","prefix":"","suffix":".key","custom":"","useCustom":false}}
+        ↓ListItemValue [ngx.components.UIDynamicElement-1707476425462]: 
+          beanData: '{"ionBean":"ListItem","IonColor":"plain:secondary"}'
+          tagName: ion-item
+          ↓Label [ngx.components.UIDynamicElement-1707476425465]: 
+            beanData: '{"ionBean":"Label","IconSlot":"plain:end"}'
+            tagName: ion-label
+            ↓some_text [ngx.components.UIText-1707476425468]: 
+              i18n: false
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.ngx.components.MobileSmartSourceType
+                  - MobileSmartSourceType: source:{"filter":"Iteration","project":"lib_SAML_ui_ngx","input":"","model":{"data":[{"priority":1707474439873}],"path":"","prefix":"","suffix":".value","custom":"","useCustom":false}}

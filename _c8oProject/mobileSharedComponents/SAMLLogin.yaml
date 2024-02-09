@@ -35,6 +35,12 @@ comment: The SAML AuthComponent. insert it anywhere in your page to enable SAML 
                                         resolve();
                                     }
                                 });
+                                var timer = setInterval(function() { 
+                				    if(SAMLpopup.closed) {
+                				        clearInterval(timer);
+                				        resolve();
+                				    }
+                				}, 1000);
                     	    }
                 
         ↓url [ngx.components.UIControlVariable-1605966392669]: 

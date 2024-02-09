@@ -2,7 +2,7 @@
 ↓lib_SAML_ui_ngx [core.Project]: 
   comment: Convertigo Mobile builder Project
   corsOrigin: =Origin
-  version: 3.0.1
+  version: 3.0.2
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
   ↓lib_SAML_reference [references.ProjectSchemaReference]: 
     projectName: lib_SAML=https://github.com/convertigo/c8oprj-lib-saml.git:branch=8.0.0:autoPull=true
